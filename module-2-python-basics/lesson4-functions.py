@@ -45,3 +45,14 @@ def is_even(number):
 print(f"Is 8 even? {is_even(8)}")
 print(f"Is 7 even? {is_even(7)}")
 
+
+# --- My mistakes and reflection ---
+"""
+I tried to execute my function by writing just its name without parentheses. Instead of running the code, Python printed something like 
+'<function say_hello at 0x7f8b...>'.
+
+What I learned:
+Writing a function's name without parentheses references the function object itself rather 
+than executing it. The parentheses '()' are the trigger that tells Python to actually call 
+and run the code inside.
+"""
