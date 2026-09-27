@@ -18,3 +18,30 @@ Main Information
 - Return Value: The value the function gives back using the 'return' statement.
 - Local Scope: Variables created inside a function only exist inside that function.
 """
+
+# Function that prints a greeting and calling the function
+def say_hello():
+    print("Hey there! Welcome to the DevNet lab.")
+
+say_hello()
+
+
+# A function that takes input and returns a result as well as testing
+def calc_discount(price, discount_percent=10):
+    """Calculates the price after applying a percentage discount."""
+    savings = price * (discount_percent / 100)
+    final_price = price - savings
+    return final_price
+
+original_price = 250.0
+sale_price = calc_discount(original_price, 20)
+print(f"Original: ${original_price} | Sale Price: ${sale_price}")
+
+
+# Quick utility function returning a boolean
+def is_even(number):
+    return number % 2 == 0
+
+print(f"Is 8 even? {is_even(8)}")
+print(f"Is 7 even? {is_even(7)}")
+
